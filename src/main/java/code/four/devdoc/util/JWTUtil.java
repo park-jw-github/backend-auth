@@ -11,7 +11,7 @@ import java.util.*;
 @Log4j2
 public class JWTUtil {
 
-    private static String key = "1234567890123456789012345678901234567890";
+    private static String key = "V7DL9amr6x6PHcAuRNrvA24fjbbOC7kL";
 
     public static String generateToken(Map<String, Object> valueMap, int min) {
 

@@ -62,6 +62,10 @@ dependencies {
 	// Spring Boot Test for testing Spring Boot applications
 	testImplementation 'org.springframework.boot:spring-boot-test:2.4.2'
 	testImplementation 'org.springframework.boot:spring-boot-test-autoconfigure:2.4.2'
+
+	implementation 'com.h2database:h2' // H2 데이터베이스 사용
+	//implementation 'com.mysql:mysql-connector-j'
+	runtimeOnly 'com.h2database:h2' // H2 데이터베이스 런타임
 }
 
 tasks.named('test') {

@@ -14,11 +14,10 @@ import java.util.*;
 public class Member {
 
     @Id
-    private String email;
+    private String nickname;
 
     private String pw;
 
-    private String nickname;
 
     private boolean social;
 

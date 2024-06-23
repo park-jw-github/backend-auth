@@ -63,13 +63,12 @@ public class JWTCheckFilter extends OncePerRequestFilter {
 
 
 
-            String email = (String) claims.get("email");
-            String pw = (String) claims.get("pw");
             String nickname = (String) claims.get("nickname");
+            String pw = (String) claims.get("pw");
             Boolean social = (Boolean) claims.get("social");
             List<String> roleNames = (List<String>) claims.get("roleNames");
 
-            MemberDTO memberDTO = new MemberDTO(email, pw, nickname, social.booleanValue(), roleNames);
+            MemberDTO memberDTO = new MemberDTO(nickname, pw, social.booleanValue(), roleNames);
 
             log.info("-----------------------------------");
             log.info(memberDTO);
