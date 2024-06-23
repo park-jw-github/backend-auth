@@ -4,6 +4,7 @@ import code.four.devdoc.controller.formatter.LocalDateFormatter;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
 @Configuration
 public class CustomServletConfig implements WebMvcConfigurer {
