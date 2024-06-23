@@ -23,51 +23,38 @@ repositories {
 	mavenCentral()
 }
 
+def activeProfile = System.getenv("SPRING_PROFILES_ACTIVE") ?: "dev"
+
 dependencies {
-	// Spring Data JPA for database interaction
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	// Spring Web for building web applications
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	// Lombok for reducing boilerplate code
 	compileOnly 'org.projectlombok:lombok'
-	// Development tools for hot reloading and other utilities
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	// MariaDB JDBC driver for connecting to MariaDB
 	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
-	// Annotation processor for Lombok
 	annotationProcessor 'org.projectlombok:lombok'
-	// Spring Boot starter for testing
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	// JUnit Platform Launcher for running tests
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
-	// ModelMapper for object mapping
 	implementation 'org.modelmapper:modelmapper:3.1.1'
-
-	// Spring Security for authentication and authorization
 	implementation 'org.springframework.boot:spring-boot-starter-security'
-
-	// JJWT for JSON Web Token creation and parsing
 	implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
 	runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
 	runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
-
-	// Gson for JSON serialization and deserialization
 	implementation 'com.google.code.gson:gson:2.10.1'
-
-	// JUnit 5 for writing and running tests
-	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.1'
-	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.1'
-
-	// Spring Boot Test for testing Spring Boot applications
-	testImplementation 'org.springframework.boot:spring-boot-test:2.4.2'
-	testImplementation 'org.springframework.boot:spring-boot-test-autoconfigure:2.4.2'
-
-	implementation 'com.h2database:h2' // H2 데이터베이스 사용
-	//implementation 'com.mysql:mysql-connector-j'
-	runtimeOnly 'com.h2database:h2' // H2 데이터베이스 런타임
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0' // 최신 JUnit 버전 사용
+	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0' // 최신 JUnit 버전 사용
+	implementation 'com.h2database:h2'
+	runtimeOnly 'com.h2database:h2'
 }
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+springBoot {
+	mainClass = 'code.four.DevdocApplication'
+}
+
+bootJar {
+	archiveFileName = 'backend-0.0.1.jar'
 }
