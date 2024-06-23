@@ -56,7 +56,7 @@ springBoot {
 }
 
 bootJar {
-	archiveFileName = 'backend-0.0.1.jar'
+	archiveFileName = 'Devdoc-0.0.1.jar'
 }
 
 tasks.withType(Test) {
