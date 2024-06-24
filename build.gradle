@@ -47,7 +47,8 @@ tasks.named('test') {
 
 
 bootJar {
-	mainClass = 'code.four.DevdocApplication'
+	archivesBaseName='devdoc-0.0.1-SNAPSHOT'
+	archiveFileName='devdoc-0.0.1-SNAPSHOT.jar'
 }
 
 tasks.withType(Test) {
