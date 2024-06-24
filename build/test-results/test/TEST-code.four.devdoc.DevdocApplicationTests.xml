@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="code.four.devdoc.DevdocApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-23T15:54:51" hostname="DESKTOP-DDI42J8" time="1.461">
+<testsuite name="code.four.devdoc.DevdocApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-24T03:24:57" hostname="DESKTOP-DDI42J8" time="0.61">
   <properties/>
-  <testcase name="contextLoads()" classname="code.four.devdoc.DevdocApplicationTests" time="1.461"/>
-  <system-out><![CDATA[00:54:35.236 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [code.four.devdoc.DevdocApplicationTests]: DevdocApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-00:54:35.555 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration code.four.devdoc.DevdocApplication for test class code.four.devdoc.DevdocApplicationTests
+  <testcase name="contextLoads()" classname="code.four.devdoc.DevdocApplicationTests" time="0.61"/>
+  <system-out><![CDATA[12:24:47.914 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [code.four.devdoc.DevdocApplicationTests]: DevdocApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:24:48.122 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration code.four.devdoc.DevdocApplication for test class code.four.devdoc.DevdocApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,24 +13,24 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.7)
 
-2024-06-24T00:54:36.890+09:00  INFO 14452 --- [devdoc] [    Test worker] c.four.devdoc.DevdocApplicationTests     : Starting DevdocApplicationTests using Java 17.0.10 with PID 14452 (started by ms231 in C:\Users\ms231\3D Objects\0623\devdoc\devdoc)
-2024-06-24T00:54:36.895+09:00  INFO 14452 --- [devdoc] [    Test worker] c.four.devdoc.DevdocApplicationTests     : No active profile set, falling back to 1 default profile: "default"
-2024-06-24T00:54:39.118+09:00  INFO 14452 --- [devdoc] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-24T00:54:39.333+09:00  INFO 14452 --- [devdoc] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 188 ms. Found 2 JPA repository interfaces.
-2024-06-24T00:54:41.272+09:00  INFO 14452 --- [devdoc] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-24T00:54:41.549+09:00  INFO 14452 --- [devdoc] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.9.Final
-2024-06-24T00:54:41.729+09:00  INFO 14452 --- [devdoc] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-06-24T00:54:42.731+09:00  INFO 14452 --- [devdoc] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-24T00:54:42.842+09:00  INFO 14452 --- [devdoc] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-24T00:54:43.163+09:00  INFO 14452 --- [devdoc] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@15f519f7
-2024-06-24T00:54:43.169+09:00  INFO 14452 --- [devdoc] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-24T00:54:46.200+09:00  INFO 14452 --- [devdoc] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-24T00:54:46.407+09:00  INFO 14452 --- [devdoc] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-24T00:54:47.366+09:00  INFO 14452 --- [devdoc] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-06-24T00:54:49.045+09:00  WARN 14452 --- [devdoc] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-24T00:54:49.531+09:00  INFO 14452 --- [devdoc] [    Test worker] c.f.devdoc.config.CustomSecurityConfig   : ---------------------security config---------------------------
-2024-06-24T00:54:49.767+09:00  INFO 14452 --- [devdoc] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@22a89db, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4867f5cf, org.springframework.security.web.context.SecurityContextHolderFilter@5afbbf9b, org.springframework.security.web.header.HeaderWriterFilter@ece769a, org.springframework.web.filter.CorsFilter@2202e978, org.springframework.security.web.authentication.logout.LogoutFilter@62284954, code.four.devdoc.security.filter.JWTCheckFilter@381ed137, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@65f8933b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@544faa01, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a5ea4cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6eacf3be, org.springframework.security.web.session.SessionManagementFilter@3d95100f, org.springframework.security.web.access.ExceptionTranslationFilter@2ff4d61b]
-2024-06-24T00:54:51.768+09:00  INFO 14452 --- [devdoc] [    Test worker] c.four.devdoc.DevdocApplicationTests     : Started DevdocApplicationTests in 15.66 seconds (process running for 19.373)
+2024-06-24T12:24:48.740+09:00  INFO 4172 --- [devdoc] [    Test worker] c.four.devdoc.DevdocApplicationTests     : Starting DevdocApplicationTests using Java 17.0.10 with PID 4172 (started by ms231 in C:\Users\ms231\3D Objects\0623\devdoc\devdoc)
+2024-06-24T12:24:48.742+09:00  INFO 4172 --- [devdoc] [    Test worker] c.four.devdoc.DevdocApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T12:24:49.865+09:00  INFO 4172 --- [devdoc] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-24T12:24:50.042+09:00  INFO 4172 --- [devdoc] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154 ms. Found 2 JPA repository interfaces.
+2024-06-24T12:24:51.470+09:00  INFO 4172 --- [devdoc] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-24T12:24:51.726+09:00  INFO 4172 --- [devdoc] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-06-24T12:24:51.866+09:00  INFO 4172 --- [devdoc] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-24T12:24:52.425+09:00  INFO 4172 --- [devdoc] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-24T12:24:52.471+09:00  INFO 4172 --- [devdoc] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-24T12:24:53.068+09:00  INFO 4172 --- [devdoc] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6106dfb6
+2024-06-24T12:24:53.072+09:00  INFO 4172 --- [devdoc] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-24T12:24:54.538+09:00  INFO 4172 --- [devdoc] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-24T12:24:54.669+09:00  INFO 4172 --- [devdoc] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-24T12:24:55.220+09:00  INFO 4172 --- [devdoc] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-24T12:24:56.029+09:00  WARN 4172 --- [devdoc] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-24T12:24:56.317+09:00  INFO 4172 --- [devdoc] [    Test worker] c.f.devdoc.config.CustomSecurityConfig   : ---------------------security config---------------------------
+2024-06-24T12:24:56.456+09:00  INFO 4172 --- [devdoc] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@746f1505, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1507bc3, org.springframework.security.web.context.SecurityContextHolderFilter@4ac64dc2, org.springframework.security.web.header.HeaderWriterFilter@2d854c13, org.springframework.web.filter.CorsFilter@202ed88d, org.springframework.security.web.authentication.logout.LogoutFilter@388b9799, code.four.devdoc.security.filter.JWTCheckFilter@40f7fb45, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b39e77d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75af5f2a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66f15ce5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c3c1963, org.springframework.security.web.session.SessionManagementFilter@76140ca5, org.springframework.security.web.access.ExceptionTranslationFilter@7aa4ef24]
+2024-06-24T12:24:57.633+09:00  INFO 4172 --- [devdoc] [    Test worker] c.four.devdoc.DevdocApplicationTests     : Started DevdocApplicationTests in 9.218 seconds (process running for 10.923)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
